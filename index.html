@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <main id="app" class="dark">
+
+            <div class="text-effect-wrapper">
+                <!-- The contenteditable attribute means you can type your text right on the page -->
+                <h1 style="font-weight: bolder; margin-bottom: 80px;" class="text" contenteditable>Bienvenida :3 </h1>
+            </div>
+
+
+
+            <div style="font-weight: bolder; margin-bottom: 150px;">
+                <input name="input" type="text" id="userInput" placeholder="Escribe tu nombre">
+                <button onclick="redirect()">
+                    Buscar
+                </button>
+            </div>
+
+            <p>By <em>Shunrai</em> <br> For you 💛!</p>
+
+        </main>
+        <svg width="0" height="0" style="position: absolute;">
+            <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+                <feComponentTransfer>
+                    <feFuncA type="discrete" tableValues="0 1"></feFuncA>
+                </feComponentTransfer>
+                <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+                <feComponentTransfer>
+                    <feFuncA type="table" tableValues="-5 11"></feFuncA>
+                </feComponentTransfer>
+            </filter>
+        </svg>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
